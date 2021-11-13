@@ -1,0 +1,198 @@
+:root {
+  --main-title-color: #ffffff;
+  --plus-text-color: #ffffff;
+  --second-bg-color: #2f303a;
+  --portfolio-button-color: #f5f4fa;
+  --second-title-color: #212121;
+  --main-text-color: #757575;
+  --second-text-color: #212121;
+  --accent-color: #2196f3;
+  --footer-clor-contact: rgba(255, 255, 255, 0.6);
+  --first-text-logo: #2196f3;
+  --second-text-logo: #000000;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  background-color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* стилизация логотипа */
+.firs-text-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700px;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--first-text-logo);
+}
+.second-text-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-text-logo);
+}
+/* стили навигации сайта */
+.header-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+.header-item-link.current {
+  color: var(--accent-color);
+}
+.header-item-link:hover,
+.header-item-link:focus {
+  color: var(--accent-color);
+}
+
+/*стили контактов*/
+.header-contact-item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.header-contact-item-text:hover,
+.header-contact-item-text:focus {
+  color: var(--accent-color);
+}
+/* стилизация секции hero */
+.hero-section {
+  background-color: var(--second-bg-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.button-main {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--main-title-color);
+  cursor: pointer;
+}
+/* преимущества */
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+/* чем мы занимаемся */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+/* наша команда */
+.staff-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.staff-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.staff-profesional {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* футер */
+.dovn {
+  background-color: var(--second-bg-color);
+}
+.second-text-logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.location {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--plus-text-color);
+}
+.footer-contact-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-clor-contact);
+}
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--accent-color);
+}
+/* портфолио */
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--portfolio-button-color);
+  color: var(--second-text-color);
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--plus-text-color);
+}
+/* все пункты портфолио */
+.img-title-work {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.83;
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
+}
+.name-work {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
