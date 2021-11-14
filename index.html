@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -19,8 +22,9 @@ font-family: 'Roboto', sans-serif;-->
 </head>
 <body>
 <header class="header">
+    <div class="container header-container">
     <nav class="header-navigation">
-    <a class="logo-text link" href=""><span class="firs-text-logo">Web</span><span class="second-text-logo">Studio</span></a>
+    <a class="logo-text header-logo-text link" href=""><span class="firs-text-logo">Web</span><span class="second-text-logo">Studio</span></a>
     <ul class="header-list list">
         <li class="header-item">
             <a class="current link header-item-link" href="./index.html">Студия</a>
@@ -33,7 +37,7 @@ font-family: 'Roboto', sans-serif;-->
         </li>
     </ul>
     </nav>
-    <ul class="list">
+    <ul class="list header-contact-list">
         <li class="header-contact-item">
             <a  class="header-contact-item-text link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -41,79 +45,97 @@ font-family: 'Roboto', sans-serif;-->
             <a  class="header-contact-item-text link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
     </ul>
+    </div>
 </header>
 <main>
     <!-- hero section -->
 <section class="hero-section">
-    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-    <button class="button-main"  type="button">Заказать услугу</button>
+<div class="container hero-container ">
+<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>   
+<button class="button-main"  type="button">Заказать услугу</button>
+</div>
 </section>
     <!-- main sections -->
 <section>
+    <div class="container section">
     <h2 hidden>преимущества</h2>
     <ul class="preference list">
-        <li>
-            <h3 class="title">Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        <li class="preference-item">
+            <h3 class="title preference-title ">Внимание к деталям</h3>
+            <p class="preference-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
-        <li>
-            <h3 class="title">Пунктуальность</h3>
-            <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</li>
-        <li>
-            <h3 class="title">Планирование</h3>
-            <p>Равным образом консультация с широким активом в значительной степени обуславливает.</li>
-        <li>
-            <h3 class="title">Современные технологии</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        <li class="preference-item">
+            <h3 class="title preference-title ">Пунктуальность</h3>
+            <p class="preference-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</li>
+        <li class="preference-item">
+            <h3 class="title preference-title">Планирование</h3>
+            <p class="preference-text">Равным образом консультация с широким активом в значительной степени обуславливает.</li>
+        <li class="preference-item">
+            <h3 class="title preference-title">Современные технологии</h3>
+            <p class="preference-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
     </ul>
+    </div>
 </section>
-<section class="work">
+<section class="section">
+    <div class="container">
     <h2 class="work-title">Чем мы занимаемся</h2>
-    <ul class="list">
-        <li>
+    <ul class="list work-list">
+        <li class="work-item">
             <img src="./images/what-we-do-img1.jpg" alt="неписание кода" width="370"
             height="294">
         </li>
-        <li>
+        <li class="work-item">
             <img src="./images/what-we-do-img2.jpg" alt="адаптация под мобильное устройство" width="370" height="294">
         </li>
-        <li>
+        <li class="work-item">
             <img src="./images/what-we-do-img3.jpg" alt="дизайн" width="370" height="294">
         </li>
     </ul>
+    </div>
 </section>
-<section class="staff">
+<section class="staff section">
+    <div class="container">
     <h2 class="staff-title">Наша команда</h2>
-    <ul class="list">
-        <li>
+    <ul class="list staff-list">
+        <li class="staff-item">
             <img src="./images/our-staff-img1.jpg" alt="первый сотрудник" width="270" height="260">
+            <div class="staff-item-bottom">
             <h3 class="staff-name">Игорь Демьяненко</h3>
             <p class="staff-profesional" lang="en">Product Designer</p>
+            </div>
         </li>
-        <li>
+        <li class="staff-item">
             <img src="./images/our-staff-img2.jpg" alt="второй сотрудник" width="270" height="260">
+            <div class="staff-item-bottom">
             <h3 class="staff-name">Ольга Репина</h3>
             <p class="staff-profesional" lang="en">Frontend Developer</p>
+            </div>
         </li>
-        <li>
+        <li class="staff-item">
             <img src="./images/our-staff-img3.jpg" alt="третий сотрудник" width="270" height="260">
+            <div class="staff-item-bottom">
             <h3 class="staff-name">Николай Тарасов</h3>
             <p class="staff-profesional" lang="en">Marketing</p>
+            </div>
         </li>
-        <li>
+        <li class="staff-item">
             <img src="./images/our-staff-img4.jpg" alt="четвертый сотрудник" width="270" height="260">
+            <div class="staff-item-bottom">
             <h3 class="staff-name">Михаил Ермаков</h3>
             <p class="staff-profesional" lang="en">UI Designer</p>
+            </div>
         </li>
         
     </ul>
+    </div>
 </section>
 
 </main>
 
 <footer class="dovn">
-    <a class="logo-text link" href=""><span class="firs-text-logo">Web</span><span
+    <div class="container">
+    <a class="logo-text-footer link" href=""><span class="firs-text-logo">Web</span><span
             class="second-text-logo-footer">Studio</span></a>
     <address>
         <ul class="list">
@@ -123,13 +145,14 @@ font-family: 'Roboto', sans-serif;-->
                 rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li>
-                <a class="link footer-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="link footer-contact-link footer-contact-link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
                 <a class="link footer-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
     </address>
+    </div>
 </footer>
 
 </body>
